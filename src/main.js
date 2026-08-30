@@ -37,7 +37,13 @@ if (form) {
         headers: { Accept: "application/json" },
       });
 
-      if (!response.ok) {
+      const contentType = response.headers.get("content-type") || "";
+      if (!response.ok || !contentType.includes("application/json")) {
+        throw new Error("send-failed");
+      }
+
+      const payload = await response.json();
+      if (!payload.ok) {
         throw new Error("send-failed");
       }
 
