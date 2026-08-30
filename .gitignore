@@ -7,3 +7,6 @@ dist/
 !*.env.example
 .vscode/
 .idea/
+*.zip
+learnbox-web.zip
+public/learnbox-web.zip

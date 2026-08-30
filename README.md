@@ -6,6 +6,14 @@ Hausschrift gemäss CI: **PT Sans** (lokal unter `public/fonts/`). Adresse: Seid
 
 Dieses Repository ersetzt den bisherigen Wix-Auftritt. Die gebauten Dateien aus `dist/` werden auf **KreativMedia** (Plesk, `httpdocs`) veröffentlicht.
 
+## Windows: ohne Git, ohne Origin-Login
+
+Cursor-Git und Origin verlangen Zugangsdaten, die mit der Google-Anmeldung nicht passen. **ZIP laden und den Ordner in Cursor öffnen** – kein Clone, kein WSL.
+
+In der Agent-Vorschau: [Download-Seite](http://127.0.0.1:43147/download.html) oder direkt [learnbox-web.zip](http://127.0.0.1:43147/learnbox-web.zip).
+
+Anleitung: [docs/WINDOWS.md](docs/WINDOWS.md).
+
 ## Lokal starten
 
 ```bash
@@ -21,11 +29,11 @@ npm run build
 
 erzeugt das deploybare Verzeichnis `dist/`.
 
-## GitHub-Repository
+## GitHub-Repository (optional)
 
-Zielname: **`learnbox-website`**.
+Zielname: **`learnbox-website`**. Nicht nötig, um die Site lokal zu öffnen oder bei KreativMedia zu veröffentlichen.
 
-Solange dieses Projekt noch ohne eigenes GitHub-Repository läuft, können Sie oben in Cursor auf **Create repo** klicken und den Namen `learnbox-website` wählen. Schritt-für-Schritt: [docs/GITHUB.md](docs/GITHUB.md).
+Wenn Sie versionieren wollen: Repo auf github.com anlegen und mit **GitHub Desktop** pushen (Google/GitHub-Login, nicht Origin). Details: [docs/GITHUB.md](docs/GITHUB.md).
 
 ## Hosting bei KreativMedia
 

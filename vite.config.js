@@ -1,9 +1,56 @@
 import { defineConfig } from "vite";
+import { createReadStream, existsSync, statSync } from "node:fs";
 import { resolve } from "node:path";
+
+function sendFile(res, filePath, contentType, downloadName) {
+  const stat = statSync(filePath);
+  res.setHeader("Content-Type", contentType);
+  res.setHeader("Content-Length", String(stat.size));
+  if (downloadName) {
+    res.setHeader(
+      "Content-Disposition",
+      `attachment; filename="${downloadName}"`
+    );
+  }
+  createReadStream(filePath).pipe(res);
+}
+
+/** Dev-only: ZIP + Download-Seite, nie Teil von dist/ / learnbox.ch */
+function windowsSourceDownload() {
+  return {
+    name: "windows-source-download",
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        const path = (req.url ?? "").split("?")[0];
+        if (path === "/learnbox-web.zip") {
+          const zipPath = resolve(__dirname, "learnbox-web.zip");
+          if (!existsSync(zipPath)) {
+            res.statusCode = 404;
+            res.setHeader("Content-Type", "text/plain; charset=utf-8");
+            res.end("ZIP fehlt. Bitte scripts/pack-source.sh ausführen.");
+            return;
+          }
+          sendFile(res, zipPath, "application/zip", "learnbox-web.zip");
+          return;
+        }
+        if (path === "/download.html" || path === "/download") {
+          sendFile(
+            res,
+            resolve(__dirname, "scripts/windows-download.html"),
+            "text/html; charset=utf-8"
+          );
+          return;
+        }
+        next();
+      });
+    },
+  };
+}
 
 export default defineConfig({
   root: ".",
   publicDir: "public",
+  plugins: [windowsSourceDownload()],
   build: {
     outDir: "dist",
     emptyOutDir: true,

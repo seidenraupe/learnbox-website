@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Quellcode – learnbox-web</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #1c1917;
+        --muted: #57534e;
+        --bg: #fafaf9;
+        --card: #ffffff;
+        --accent: #0f766e;
+        --accent-hover: #0d9488;
+        --line: #e7e5e4;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", system-ui, sans-serif;
+        background: var(--bg);
+        color: var(--ink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+      }
+      main {
+        width: min(36rem, 100%);
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        padding: 2rem 1.75rem;
+        box-shadow: 0 10px 30px rgb(28 25 23 / 6%);
+      }
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: 1.5rem;
+      }
+      p {
+        margin: 0 0 1rem;
+        line-height: 1.5;
+        color: var(--muted);
+      }
+      ol {
+        margin: 0 0 1.5rem;
+        padding-left: 1.25rem;
+        color: var(--ink);
+        line-height: 1.55;
+      }
+      a.button {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.8rem 1.2rem;
+        border-radius: 0.6rem;
+      }
+      a.button:hover {
+        background: var(--accent-hover);
+      }
+      .note {
+        margin-top: 1.25rem;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Quellcode ohne Git</h1>
+      <p>
+        Keine Anmeldung bei Cursor-Git oder Origin. ZIP herunterladen, Ordner in
+        Cursor öffnen – wie ein normales Projekt auf dem PC.
+      </p>
+      <ol>
+        <li>ZIP speichern und entpacken.</li>
+        <li>In Cursor: Datei → Ordner öffnen → den Ordner <strong>learnbox-web</strong>.</li>
+        <li>Im Terminal: <code>npm install</code> und <code>npm run dev</code>.</li>
+      </ol>
+      <a class="button" href="/learnbox-web.zip" download="learnbox-web.zip"
+        >Quellcode herunterladen</a
+      >
+      <p class="note">
+        Diese Seite gibt es nur in der Agent-Vorschau, nicht auf learnbox.ch.
+      </p>
+    </main>
+  </body>
+</html>
