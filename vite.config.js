@@ -33,6 +33,15 @@ export default defineConfig({
           __dirname,
           "blog/internes-wissen-gezielt-foerdern.html"
         ),
+        "blog-micro-ki": resolve(__dirname, "blog/micro-learning-mit-ki.html"),
+        "blog-ki-haeppchen": resolve(
+          __dirname,
+          "blog/ki-im-elearning-personalisierte-haeppchen.html"
+        ),
+        "blog-fuenf-minuten": resolve(
+          __dirname,
+          "blog/fuenf-minuten-am-arbeitsplatz.html"
+        ),
         notfound: resolve(__dirname, "404.html"),
       },
     },

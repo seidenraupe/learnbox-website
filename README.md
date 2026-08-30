@@ -50,7 +50,7 @@ Der Vorschlag für Informationsarchitektur, Texte, Technik und Go-live steht in 
 | `/` | Start: Nutzen, Leistungen, Kontaktaufruf |
 | `/leistungen.html` | Beratungsprozess von Analyse bis Begleitung |
 | `/ueber.html` | learnbox GmbH und Nicole Strähl |
-| `/blog.html` | LearnBlog-Übersicht |
+| `/blog.html` | LearnBlog (acht Beiträge, inkl. Micro-Learning und KI) |
 | `/kontakt.html` | Formular, Adresse, Telefon |
 | `/impressum.html` | Pflichtangaben |
 | `/datenschutz.html` | Datenschutzerklärung |

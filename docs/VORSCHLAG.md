@@ -21,7 +21,7 @@ Zielgruppe sind Ausbildungs-Verantwortliche in KMU und Institutionen, die eine L
 | Start | Nutzen in drei Sätzen, Leistungsüberblick, Blog-Teaser, CTA |
 | Leistungen | Die sechs Schritte plus Ergebnis (Akademie, LMS-Auswahl) |
 | Über uns | GmbH, Nicole Strähl, Haltung «Wissen teilen» |
-| LearnBlog | Fünf bestehende Beiträge, stabile Pfade |
+| LearnBlog | Acht Beiträge, darunter Micro-Learning und KI |
 | Kontakt | Formular + Adresse + Telefon |
 | Impressum / Datenschutz | Pflicht, bisher auf Wix fehlend |
 
@@ -35,8 +35,7 @@ Zielgruppe sind Ausbildungs-Verantwortliche in KMU und Institutionen, die eine L
 ### Offene Punkte vor Go-live (bitte gegenlesen)
 
 1. **Fotos:** Aktuell Wortmarke und Initialen, kein Portrait. Ein Bild von Nicole Strähl würde «Über uns» tragen.
-2. **Blog-Daten:** Zwei Beiträge auf Wix ohne sichtbares Datum; im HTML als LearnBlog ohne erfundene Daten.
-3. **E-Mail-Absender:** `kontakt.php` sendet an nicole.straehl@learnbox.ch, From `noreply@learnbox.ch`. Mailkonto auf KreativMedia anlegen.
+2. **E-Mail-Absender:** `kontakt.php` sendet an nicole.straehl@learnbox.ch, From `noreply@learnbox.ch`. Mailkonto auf KreativMedia anlegen.
 
 Die Adresse im Auftritt ist **Seidenstrasse 47, 8400 Winterthur** (Stand nach Adressänderung).
 
