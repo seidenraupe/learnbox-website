@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Platzhalter: Begleiten">
+  <rect width="640" height="360" fill="#14221c"/>
+  <circle cx="250" cy="160" r="52" fill="#d8efe3"/>
+  <circle cx="390" cy="160" r="52" fill="none" stroke="#1a9a62" stroke-width="14"/>
+  <line x1="302" y1="160" x2="338" y2="160" stroke="#9ee0bf" stroke-width="12"/>
+  <text x="40" y="328" fill="#9ee0bf" font-family="PT Sans, sans-serif" font-size="22" font-weight="700">06 · Platzhalter</text>
+</svg>

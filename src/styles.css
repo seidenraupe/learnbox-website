@@ -378,6 +378,68 @@ p {
   padding: 1.15rem 1.3rem 0;
 }
 
+.process-track {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.process-track li {
+  border-top: 3px solid var(--leaf);
+  padding-top: 0.7rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.process-track a {
+  color: var(--forest);
+  text-decoration: none;
+}
+
+.process-track a:hover {
+  color: var(--leaf);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem;
+}
+
+.process-grid .card h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.45rem;
+}
+
+.band-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: #e8f4ee;
+}
+
+.band-list li + li {
+  margin-top: 0.4rem;
+}
+
+.result-cta {
+  display: grid;
+  grid-template-columns: 1.4fr auto;
+  gap: 2rem;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.8rem 1.7rem;
+  box-shadow: var(--shadow);
+}
+
+.result-cta .lede {
+  margin-bottom: 0;
+}
+
 .page-photo {
   margin: 0 0 2rem;
   border-radius: 1.4rem;
@@ -818,7 +880,9 @@ textarea {
   .split,
   .cards,
   .steps,
-  .footer-grid {
+  .footer-grid,
+  .process-grid,
+  .result-cta {
     grid-template-columns: 1fr;
   }
 
@@ -882,6 +946,10 @@ textarea {
       rgba(246, 241, 232, 0.2) 70%,
       transparent 100%
     );
+  }
+
+  .process-track {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .hero-stats {

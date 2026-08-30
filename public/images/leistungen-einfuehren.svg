@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Platzhalter: Einführen">
+  <rect width="640" height="360" fill="#14221c"/>
+  <rect x="250" y="70" width="140" height="200" rx="8" fill="none" stroke="#d8efe3" stroke-width="12"/>
+  <circle cx="292" cy="168" r="18" fill="#1a9a62"/>
+  <text x="40" y="328" fill="#9ee0bf" font-family="PT Sans, sans-serif" font-size="22" font-weight="700">04 · Platzhalter</text>
+</svg>
