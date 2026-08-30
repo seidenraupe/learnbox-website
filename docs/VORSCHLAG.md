@@ -34,7 +34,7 @@ Zielgruppe sind Ausbildungs-Verantwortliche in KMU und Institutionen, die eine L
 
 ### Offene Punkte vor Go-live (bitte gegenlesen)
 
-1. **Fotos:** Aktuell Wortmarke und Initialen, kein Portrait. Ein Bild von Nicole Strähl würde «Über uns» tragen.
+1. **Fotos:** Logo, Favicon und die Bilder der Wix-Site sind lokal unter `public/images/` (kein Portrait von Nicole Strähl in den bisherigen Medien).
 2. **E-Mail-Absender:** `kontakt.php` sendet an nicole.straehl@learnbox.ch, From `noreply@learnbox.ch`. Mailkonto auf KreativMedia anlegen.
 
 Die Adresse im Auftritt ist **Seidenstrasse 47, 8400 Winterthur** (Stand nach Adressänderung).
