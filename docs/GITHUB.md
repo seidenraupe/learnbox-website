@@ -1,8 +1,8 @@
 # GitHub-Repository `learnbox-website`
 
-Dieses Projekt ist als **ein** Git-Repository vorbereitet: statische Site, Dokumentation, Deploy-Vorlage.
+Dieses Projekt ist als **ein** Git-Repository vorbereitet: statische Site, Dokumentation, Deploy-Vorlage. Das GitHub-Repository **learnbox-website** ist angelegt; Commits in dieser Umgebung gehen auf den verknüpften `main`-Branch.
 
-Ein GitHub-Konto kann von dieser Umgebung aus nicht angemeldet werden (`gh` ist nicht eingeloggt). Das Repo legen Sie deshalb so an:
+Falls Sie das Repo lokal klonen oder einen zweiten Remote setzen wollen:
 
 ## Variante A – Cursor
 

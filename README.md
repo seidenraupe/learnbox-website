@@ -2,6 +2,8 @@
 
 Statische HTML-Website für [learnbox.ch](https://www.learnbox.ch): Beratung für digitales Lernen, blended learning und LMS-Einführung in Unternehmen.
 
+Hausschrift gemäss CI: **PT Sans** (lokal unter `public/fonts/`). Adresse: Seidenstrasse 47, 8400 Winterthur.
+
 Dieses Repository ersetzt den bisherigen Wix-Auftritt. Die gebauten Dateien aus `dist/` werden auf **KreativMedia** (Plesk, `httpdocs`) veröffentlicht.
 
 ## Lokal starten

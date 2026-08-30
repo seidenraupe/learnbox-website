@@ -34,10 +34,11 @@ Zielgruppe sind Ausbildungs-Verantwortliche in KMU und Institutionen, die eine L
 
 ### Offene Punkte vor Go-live (bitte gegenlesen)
 
-1. **Adresse:** Handelsregister Untere Vogelsangstrasse 4, 8400 Winterthur. Die Wix-Kontaktbox nannte Seidenstrasse 47. Im HTML steht die Registeradresse. Falls die Besuchsadresse anders ist, Impressum und Kontakt anpassen.
-2. **Fotos:** Aktuell Wortmarke und Initialen, kein Portrait. Ein Bild von Nicole Strähl würde «Über uns» tragen.
-3. **Blog-Daten:** Zwei Beiträge auf Wix ohne sichtbares Datum; im HTML als LearnBlog ohne erfundene Daten.
-4. **E-Mail-Absender:** `kontakt.php` sendet an nicole.straehl@learnbox.ch, From `noreply@learnbox.ch`. Mailkonto auf KreativMedia anlegen.
+1. **Fotos:** Aktuell Wortmarke und Initialen, kein Portrait. Ein Bild von Nicole Strähl würde «Über uns» tragen.
+2. **Blog-Daten:** Zwei Beiträge auf Wix ohne sichtbares Datum; im HTML als LearnBlog ohne erfundene Daten.
+3. **E-Mail-Absender:** `kontakt.php` sendet an nicole.straehl@learnbox.ch, From `noreply@learnbox.ch`. Mailkonto auf KreativMedia anlegen.
+
+Die Adresse im Auftritt ist **Seidenstrasse 47, 8400 Winterthur** (Stand nach Adressänderung).
 
 ## 3. Technische Umsetzung
 
@@ -49,7 +50,7 @@ Zielgruppe sind Ausbildungs-Verantwortliche in KMU und Institutionen, die eine L
 
 **SEO und Umleitung:** `sitemap.xml`, Canonical-Tags, Schema.org ProfessionalService. `.htaccess` leitet alte Wix-Pfade (`/dienstleistungen`, `/learnblog`, `/post/...`) 301 auf die neuen HTML-Dateien.
 
-**Schriften:** Fraunces + Source Sans 3 über Google Fonts. Für strengeren Datenschutz die Dateien später nach `public/fonts/` legen und die CSS-`@font-face`-Regeln umbiegen.
+**Schriften:** Hausschrift gemäss CI ist **PT Sans** (Regular, Italic, Bold, Bold Italic). Die Dateien liegen lokal unter `public/fonts/` (SIL OFL). Es gibt keinen Aufruf zu Google Fonts.
 
 **SSL und DNS:** Let’s Encrypt in Plesk. Domain `learnbox.ch` / `www` von Wix-Nameservern auf KreativMedia umstellen, sobald `httpdocs` die neuen Dateien enthält. E-Mail parallel auf KreativMedia (MX) planen, sonst bricht der Posteingang beim DNS-Wechsel.
 
