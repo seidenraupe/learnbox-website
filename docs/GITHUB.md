@@ -1,36 +1,16 @@
 # GitHub-Repository `learnbox-website`
 
-Zum Arbeiten auf dem Windows-PC ist **kein Git** nötig. Ordner aus der ZIP öffnen: [WINDOWS.md](WINDOWS.md).
+Privat, Account **seidenraupe**:
 
-GitHub ist optional, wenn Sie den Stand versionieren oder Plesk per Git anbinden wollen. **Origin / Cursor-Git nicht verwenden** – die Anmeldung (Benutzername/Passwort) funktioniert mit Google-Login in Cursor nicht.
+**https://github.com/seidenraupe/learnbox-website**
 
-## Empfohlen: GitHub Desktop
+Auf Windows klonen mit GitHub Desktop, nicht mit Origin/Cursor-Git. Anleitung: [WINDOWS.md](WINDOWS.md).
 
-1. Auf [github.com](https://github.com) ein neues **privates** Repository **learnbox-website** anlegen – ohne README, ohne License, ohne `.gitignore`.
-2. [GitHub Desktop](https://desktop.github.com) installieren und mit dem GitHub-Konto anmelden.
-3. **Add** → **Add existing repository** → den entpackten Ordner `learnbox-web` wählen.
-4. Falls GitHub Desktop noch kein Git-Repo erkennt: **Create repository** im selben Ordner, dann unter **Repository → Repository settings → Remote** die URL `https://github.com/IHR-USER/learnbox-website.git` eintragen.
-5. Commit und **Push origin**.
+Clone-URL (HTTPS):
 
-Ersetzen Sie `IHR-USER` durch den GitHub-Account, der learnbox gehören soll.
-
-## Variante: GitHub-Website plus Kommandozeile
-
-Nur wenn Git für Windows schon installiert ist und `gh` oder `git` in PowerShell laufen:
-
-```powershell
-cd Pfad\zu\learnbox-web
-git init
-git add .
-git commit -m "Learnbox Website"
-git branch -M main
-git remote add origin https://github.com/IHR-USER/learnbox-website.git
-git push -u origin main
 ```
-
-GitHub fragt dann nach einem **Personal Access Token** oder GitHub Desktop/Git Credential Manager – nicht nach dem Cursor-Passwort.
-
-Das Hilfsskript `scripts/create-github-repo.sh` braucht `gh auth login` (GitHub CLI), ebenfalls unabhängig von Origin.
+https://github.com/seidenraupe/learnbox-website.git
+```
 
 ## Empfohlene Repo-Einstellungen
 

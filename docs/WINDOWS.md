@@ -1,61 +1,32 @@
-# Website ohne Git auf den Windows-PC
+# Website auf den Windows-PC
 
-Origin und Cursor-Git verlangen oft Benutzername und Passwort. Mit Google-Anmeldung in Cursor funktioniert das **nicht**. WSL und Origin-CLI sind dafür nicht nötig.
+Kein WSL. Nicht bei Origin oder Cursor-Git anmelden.
 
-**Weg: ZIP herunterladen, Ordner in Cursor öffnen.** Genau so, als läge das Projekt schon lokal – ohne Clone, ohne Login.
+## Empfohlen: GitHub Desktop
 
-## 1. ZIP holen
+Das Repo liegt privat unter **[seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)**.
 
-In der laufenden Vorschau dieser Umgebung:
+1. [GitHub Desktop](https://desktop.github.com) installieren und mit **seidenraupe** anmelden.
+2. **File → Clone repository** → `seidenraupe/learnbox-website` wählen.
+3. Zielordner z. B. `Dokumente\learnbox-website`.
+4. In Cursor: **File → Open Folder** → denselben Ordner.
 
-[http://127.0.0.1:43147/download.html](http://127.0.0.1:43147/download.html)
-
-Dort **Quellcode herunterladen** klicken. Datei: `learnbox-web.zip`.
-
-Direktlink: [http://127.0.0.1:43147/learnbox-web.zip](http://127.0.0.1:43147/learnbox-web.zip)
-
-Die ZIP liegt **nicht** auf der späteren Live-Site (learnbox.ch). Sie wird nur in der lokalen Vorschau angeboten.
-
-## 2. Entpacken
-
-1. Im Explorer die ZIP doppelklicken oder Rechtsklick → **Alle extrahieren**.
-2. Ziel z. B. `Dokumente\learnbox-web`.
-3. Im Ordner müssen `package.json`, `index.html` und der Ordner `src` sichtbar sein.
-
-## 3. In Cursor öffnen
-
-1. Cursor Desktop (Windows, ohne WSL).
-2. **File → Open Folder** (Datei → Ordner öffnen).
-3. Den entpackten Ordner `learnbox-web` wählen.
-
-Kein Git-Remote, kein Clone, keine Anmeldung.
-
-## 4. Vorschau lokal
-
-Im integrierten Terminal von Cursor (PowerShell reicht):
+Im Terminal (PowerShell):
 
 ```powershell
 npm install
 npm run dev
 ```
 
-Browser: [http://127.0.0.1:43147](http://127.0.0.1:43147)
+Zum Veröffentlichen bei KreativMedia: `npm run build`, Inhalt von `dist\` nach `httpdocs`. Details: [HOSTING.md](HOSTING.md).
 
-Zum Veröffentlichen bei KreativMedia:
+## Alternative: ZIP (ohne Git)
 
-```powershell
-npm run build
-```
+Falls GitHub Desktop gerade nicht passt:
 
-Den Inhalt von `dist\` per FTP nach `httpdocs` laden. Details: [HOSTING.md](HOSTING.md).
+1. In der Agent-Vorschau [Download-Seite](http://127.0.0.1:43147/download.html) oder [learnbox-web.zip](http://127.0.0.1:43147/learnbox-web.zip).
+2. Entpacken.
+3. In Cursor den Ordner `learnbox-web` öffnen.
+4. `npm install` und `npm run dev`.
 
-## Optional später: GitHub
-
-Wenn Sie die Dateien versionieren wollen, geht das **über GitHub**, nicht über Origin:
-
-1. Auf [github.com](https://github.com) ein privates Repo `learnbox-website` anlegen (leer, ohne README).
-2. [GitHub Desktop](https://desktop.github.com) installieren und mit dem GitHub-Konto anmelden.
-3. **Add → Add existing repository** auf den Ordner `learnbox-web`.
-4. Remote setzen und pushen.
-
-Schritt-für-Schritt: [GITHUB.md](GITHUB.md).
+Die ZIP kommt nicht auf learnbox.ch.

@@ -59,7 +59,7 @@ Ein Repository reicht. Name: **learnbox-website**.
 
 Empfohlene Einrichtung:
 
-1. In Cursor **Create repo** wählen und `learnbox-website` nennen, **oder** auf GitHub ein leeres privates Repo `learnbox-website` anlegen und dieses Projekt pushen (siehe [GITHUB.md](GITHUB.md)).
+1. Repo: **[seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)** (privat). Lokal mit GitHub Desktop klonen, siehe [GITHUB.md](GITHUB.md) und [WINDOWS.md](WINDOWS.md).
 2. Branch `main` ist die Quelle für Produktion.
 3. Optional: GitHub Action «FTP Deploy» mit Secrets des KreativMedia-FTP (Vorlage unter `.github/workflows/deploy-ftp.yml`).
 4. Alternative ohne GitHub Actions: in Plesk Git auf das GitHub-Repo zeigen und nach `httpdocs` auschecken, danach `dist/` als Document Root oder die gebauten Dateien direkt ins Repo legen.

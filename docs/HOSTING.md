@@ -24,7 +24,7 @@ Optional automatisiert: GitHub Action `.github/workflows/deploy-ftp.yml`.
 
 ## Weg 2: Git in Plesk
 
-1. GitHub-Repo `learnbox-website` anlegen.
+1. Remote: `https://github.com/seidenraupe/learnbox-website.git` (privat, Account seidenraupe).
 2. In Plesk bei der Domain **Git** → Remote-Repository (HTTPS oder Deploy-Key).
 3. Deployment-Verzeichnis: nicht roh auf `httpdocs` zeigen, wenn dort der Quellcode inkl. `src/` landen würde.
 4. Saubere Variante: CI baut `dist/` und pusht nur das Artefakt, **oder** lokal bauen und einen `deploy`-Branch mit dem Inhalt von `dist/` pflegen.

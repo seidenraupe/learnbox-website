@@ -6,13 +6,13 @@ Hausschrift gemäss CI: **PT Sans** (lokal unter `public/fonts/`). Adresse: Seid
 
 Dieses Repository ersetzt den bisherigen Wix-Auftritt. Die gebauten Dateien aus `dist/` werden auf **KreativMedia** (Plesk, `httpdocs`) veröffentlicht.
 
-## Windows: ohne Git, ohne Origin-Login
+## Auf den Windows-PC (ohne WSL, ohne Origin)
 
-Cursor-Git und Origin verlangen Zugangsdaten, die mit der Google-Anmeldung nicht passen. **ZIP laden und den Ordner in Cursor öffnen** – kein Clone, kein WSL.
+Das GitHub-Repo ist privat unter **[seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)**.
 
-In der Agent-Vorschau: [Download-Seite](http://127.0.0.1:43147/download.html) oder direkt [learnbox-web.zip](http://127.0.0.1:43147/learnbox-web.zip).
+In **GitHub Desktop** (mit dem Konto seidenraupe): **File → Clone repository** → `seidenraupe/learnbox-website`. Danach den Ordner in Cursor öffnen. Kein Origin-Login, kein WSL.
 
-Anleitung: [docs/WINDOWS.md](docs/WINDOWS.md).
+Ohne GitHub Desktop: [docs/WINDOWS.md](docs/WINDOWS.md) (ZIP).
 
 ## Lokal starten
 
@@ -29,11 +29,9 @@ npm run build
 
 erzeugt das deploybare Verzeichnis `dist/`.
 
-## GitHub-Repository (optional)
+## GitHub-Repository
 
-Zielname: **`learnbox-website`**. Nicht nötig, um die Site lokal zu öffnen oder bei KreativMedia zu veröffentlichen.
-
-Wenn Sie versionieren wollen: Repo auf github.com anlegen und mit **GitHub Desktop** pushen (Google/GitHub-Login, nicht Origin). Details: [docs/GITHUB.md](docs/GITHUB.md).
+Privat: **[github.com/seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)**. Einstellungen und FTP-Deploy: [docs/GITHUB.md](docs/GITHUB.md).
 
 ## Hosting bei KreativMedia
 
