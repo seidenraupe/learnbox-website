@@ -4,11 +4,11 @@ Statische HTML-Website für [learnbox.ch](https://www.learnbox.ch): Beratung fü
 
 Hausschrift gemäss CI: **PT Sans** (lokal unter `public/fonts/`). Adresse: Seidenstrasse 47, 8400 Winterthur.
 
-Dieses Repository ersetzt den bisherigen Wix-Auftritt. Die gebauten Dateien aus `dist/` werden auf **KreativMedia** (Plesk, `httpdocs`) veröffentlicht.
+Dieses Repository ersetzt den bisherigen Wix-Auftritt. Vorschau auf GitHub Pages: [seidenraupe.github.io/learnbox-website](https://seidenraupe.github.io/learnbox-website/). Die Produktiv-Site bleibt **KreativMedia** (`httpdocs`).
 
 ## Auf den Windows-PC (ohne WSL, ohne Origin)
 
-Das GitHub-Repo ist privat unter **[seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)**.
+Das GitHub-Repo liegt unter **[seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)**.
 
 In **GitHub Desktop** (mit dem Konto seidenraupe): **File → Clone repository** → `seidenraupe/learnbox-website`. Danach den Ordner in Cursor öffnen. Kein Origin-Login, kein WSL.
 
@@ -31,7 +31,7 @@ erzeugt das deploybare Verzeichnis `dist/`.
 
 ## GitHub-Repository
 
-Privat: **[github.com/seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)**. Einstellungen und FTP-Deploy: [docs/GITHUB.md](docs/GITHUB.md).
+**[github.com/seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)** · Pages: [seidenraupe.github.io/learnbox-website](https://seidenraupe.github.io/learnbox-website/). Details: [docs/GITHUB.md](docs/GITHUB.md).
 
 ## Hosting bei KreativMedia
 

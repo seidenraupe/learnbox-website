@@ -15,6 +15,31 @@ function sendFile(res, filePath, contentType, downloadName) {
   createReadStream(filePath).pipe(res);
 }
 
+/** Root-Pfade (/leistungen.html) an Vite-base anpassen, z. B. GitHub Pages. */
+function prefixHtmlUrls() {
+  let base = "/";
+  return {
+    name: "prefix-html-urls",
+    configResolved(config) {
+      base = config.base || "/";
+    },
+    transformIndexHtml: {
+      order: "post",
+      handler(html) {
+        if (!base || base === "/") return html;
+        const prefix = base.endsWith("/") ? base.slice(0, -1) : base;
+        return html.replace(
+          /(href|src|action)="(\/[^"]*)"/g,
+          (full, attr, path) => {
+            if (path === prefix || path.startsWith(`${prefix}/`)) return full;
+            return `${attr}="${prefix}${path}"`;
+          }
+        );
+      },
+    },
+  };
+}
+
 /** Dev-only: ZIP + Download-Seite, nie Teil von dist/ / learnbox.ch */
 function windowsSourceDownload() {
   return {
@@ -50,7 +75,7 @@ function windowsSourceDownload() {
 export default defineConfig({
   root: ".",
   publicDir: "public",
-  plugins: [windowsSourceDownload()],
+  plugins: [prefixHtmlUrls(), windowsSourceDownload()],
   build: {
     outDir: "dist",
     emptyOutDir: true,

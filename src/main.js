@@ -54,7 +54,7 @@ if (form) {
       status.hidden = false;
     } catch {
       status.textContent =
-        "Der Versand ist lokal nicht aktiv. Schreiben Sie uns direkt an nicole.straehl@learnbox.ch oder rufen Sie +41 79 323 56 23 an.";
+        "Das Formular sendet erst auf dem KreativMedia-Server. Schreiben Sie uns direkt an nicole.straehl@learnbox.ch oder rufen Sie +41 79 323 56 23 an.";
       status.className = "form-status err";
       status.hidden = false;
     } finally {

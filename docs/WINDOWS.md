@@ -4,7 +4,7 @@ Kein WSL. Nicht bei Origin oder Cursor-Git anmelden.
 
 ## Empfohlen: GitHub Desktop
 
-Das Repo liegt privat unter **[seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)**.
+Das Repo liegt unter **[seidenraupe/learnbox-website](https://github.com/seidenraupe/learnbox-website)**.
 
 1. [GitHub Desktop](https://desktop.github.com) installieren und mit **seidenraupe** anmelden.
 2. **File → Clone repository** → `seidenraupe/learnbox-website` wählen.
