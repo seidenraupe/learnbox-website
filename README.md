@@ -49,6 +49,19 @@ Kurzfassung:
 
 Der Vorschlag für Informationsarchitektur, Texte, Technik und Go-live steht in [docs/VORSCHLAG.md](docs/VORSCHLAG.md).
 
+## Korrekturlesen (PDF)
+
+Alle öffentlichen Texte der Website (inkl. Meta-Titel, Meta-Beschreibung, Blog, Impressum und Datenschutz) stehen zum Korrekturlesen in [docs/learnbox-korrekturlesen.pdf](docs/learnbox-korrekturlesen.pdf).
+
+Neu erzeugen (benötigt Python 3, `beautifulsoup4`, `lxml` und lokal installiertes Chrome/Chromium):
+
+```bash
+pip install beautifulsoup4 lxml
+python3 scripts/generate-korrektur-pdf.py
+```
+
+Ergebnis: `docs/learnbox-korrekturlesen.pdf` (Quell-HTML: `docs/korrekturlesen.html`).
+
 ## Seiten
 
 | Pfad | Inhalt |
