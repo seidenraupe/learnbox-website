@@ -51,16 +51,17 @@ Der Vorschlag für Informationsarchitektur, Texte, Technik und Go-live steht in 
 
 ## Korrekturlesen (PDF)
 
-Alle öffentlichen Texte der Website (inkl. Meta-Titel, Meta-Beschreibung, Blog, Impressum und Datenschutz) stehen zum Korrekturlesen in [docs/learnbox-korrekturlesen.pdf](docs/learnbox-korrekturlesen.pdf).
+Korrektur-PDF in [docs/learnbox-korrekturlesen.pdf](docs/learnbox-korrekturlesen.pdf): vorne **SEO & Formulartexte**, danach alle Seiten im **Original-Layout** (Farben, PT Sans, Bilder).
 
-Neu erzeugen (benötigt Python 3, `beautifulsoup4`, `lxml` und lokal installiertes Chrome/Chromium):
+Neu erzeugen (Node/npm, Python 3, Chrome/Chromium):
 
 ```bash
-pip install beautifulsoup4 lxml
+npm install
+pip install beautifulsoup4 lxml pypdf
 python3 scripts/generate-korrektur-pdf.py
 ```
 
-Ergebnis: `docs/learnbox-korrekturlesen.pdf` (Quell-HTML: `docs/korrekturlesen.html`).
+Das Skript baut `dist/`, startet kurz die Vite-Vorschau und druckt jede Seite per Headless-Chrome. Ergebnis: `docs/learnbox-korrekturlesen.pdf` (Einleitungs-HTML: `docs/korrekturlesen.html`).
 
 ## Seiten
 

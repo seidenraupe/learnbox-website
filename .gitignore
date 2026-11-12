@@ -10,3 +10,4 @@ dist/
 *.zip
 learnbox-web.zip
 public/learnbox-web.zip
+docs/.korrektur-cache/
