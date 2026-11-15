@@ -8,17 +8,17 @@ Die Cloud-Agents können auf **GitHub** nicht direkt pushen (Token ohne Schreibr
    ```text
    C:\Users\thoma\inspiroo gmbh\KI-Projekte - Projekte\learnbox-website
    ```
-2. Datei **`learnbox-github-update.bundle`** in diesen Ordner legen (vom Agent-Download oder `docs/` nach erneutem Erzeugen).
+2. Datei **`learnbox-github-sync.bundle`** in diesen Ordner legen (vom Agent-Artefakt-Download oder aus `docs/` im Repo).
 3. In **Git Bash** oder PowerShell im Repo:
 
    ```bash
    cd "C:/Users/thoma/inspiroo gmbh/KI-Projekte - Projekte/learnbox-website"
-   git fetch ../learnbox-github-update.bundle main:main
+   git fetch ../learnbox-github-sync.bundle main:main
    ```
    Oder wenn `main` schon existiert:
 
    ```bash
-   git pull "C:/Users/thoma/inspiroo gmbh/KI-Projekte - Projekte/learnbox-website/learnbox-github-update.bundle" main
+   git pull "C:/Users/thoma/inspiroo gmbh/KI-Projekte - Projekte/learnbox-website/learnbox-github-sync.bundle" main
    ```
 
 4. **GitHub Desktop** → **Push origin** (oder `git push origin main`).
@@ -40,5 +40,5 @@ git push github main
 
 ```bash
 git fetch github
-git bundle create docs/learnbox-github-update.bundle github/main..main
+git bundle create docs/learnbox-github-sync.bundle github/main..main
 ```
