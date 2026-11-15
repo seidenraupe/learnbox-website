@@ -14,6 +14,14 @@ In **GitHub Desktop** (mit dem Konto seidenraupe): **File → Clone repository**
 
 Ohne GitHub Desktop: [docs/WINDOWS.md](docs/WINDOWS.md) (ZIP).
 
+## Google Analytics 4
+
+Property **443927742**. Standard-Mess-ID: `G-443927742` (falls in GA4 unter Datenstreams abweichend: `VITE_GA4_MEASUREMENT_ID` in `.env`).
+
+Lokal nur mit `VITE_GA_ENABLE_DEV=true`; in Produktion (`npm run build`) aktiv.
+
+Erfasste Interaktionen: Seitenaufruf, Navigation (Header/Footer/Prozess), CTAs, Blog-Teaser, Telefon/E-Mail, Menü, Kontaktformular (Start, Absenden, Erfolg, Fehler).
+
 ## Lokal starten
 
 ```bash

@@ -1,3 +1,7 @@
+import { initAnalytics, trackEvent } from "./analytics.js";
+
+initAnalytics();
+
 const nav = document.querySelector("[data-nav]");
 const toggle = document.querySelector("[data-menu]");
 
@@ -30,6 +34,11 @@ if (form) {
     status.className = "form-status";
     status.hidden = true;
 
+    trackEvent("form_submit", {
+      form_name: "contact",
+      topic: String(data.get("topic") || ""),
+    });
+
     try {
       const response = await fetch(form.action, {
         method: "POST",
@@ -52,11 +61,16 @@ if (form) {
         "Danke. Ihre Nachricht ist angekommen. Wir melden uns in der Regel innert eines Werktags.";
       status.className = "form-status ok";
       status.hidden = false;
+      trackEvent("generate_lead", {
+        form_name: "contact",
+        topic: String(data.get("topic") || ""),
+      });
     } catch {
       status.textContent =
         "Das Formular sendet erst auf dem KreativMedia-Server. Schreiben Sie uns direkt an nicole.straehl@learnbox.ch oder rufen Sie +41 79 323 56 23 an.";
       status.className = "form-status err";
       status.hidden = false;
+      trackEvent("form_error", { form_name: "contact" });
     } finally {
       submit.disabled = false;
     }
