@@ -11,3 +11,4 @@ dist/
 learnbox-web.zip
 public/learnbox-web.zip
 docs/.korrektur-cache/
+docs/*.bundle
