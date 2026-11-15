@@ -13,6 +13,15 @@ Nach `npm run build` liegt die Site in `dist/`:
 
 Diesen Ordnerinhalt nach `httpdocs` kopieren (nicht den Ordner `dist` selbst als Unterordner).
 
+## Verbindung testen (ohne Upload)
+
+1. `.env` aus `.env.example` anlegen (liegt in der Projektroot, ist in Git ignoriert).
+2. `KREATIVMEDIA_SFTP_HOST` = **FTP-Hostname aus Plesk** (nicht die Server-IP, sonst TLS-Warnung).
+3. Port in der Regel **21** (FTPS), Zielpfad oft `/` (FTP-User ist bereits im Webroot).
+4. `python3 scripts/test-kreativmedia-connection.py` – prüft Login und versucht eine Auflistung.
+
+Von Cloud-CI oder manchen Netzen blockiert Plesk den FTP-Datenkanal (Fehler 425). Dann lokal mit FileZilla testen; Zugangsdaten können trotzdem stimmen.
+
 ## Weg 1: FTP (einfach)
 
 1. In Plesk FTP-Benutzer notieren.
