@@ -1,6 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Platzhalter: Einführen">
-  <rect width="640" height="360" fill="#14221c"/>
-  <rect x="250" y="70" width="140" height="200" rx="8" fill="none" stroke="#d8efe3" stroke-width="12"/>
-  <circle cx="292" cy="168" r="18" fill="#1a9a62"/>
-  <text x="40" y="328" fill="#9ee0bf" font-family="PT Sans, sans-serif" font-size="22" font-weight="700">04 · Platzhalter</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img">
+  <title>Einfuehren</title>
+  <rect width="640" height="320" fill="#f4f0e6"/>
+  <rect x="174" y="22" width="292" height="276" rx="36" fill="#e7f4ec"/>
+  <rect x="196" y="44" width="248" height="232" rx="28" fill="#fffdf8" stroke="#e4d9c8" stroke-width="1.5"/>
+  <path d="M278 244 V156 A50 50 0 0 1 378 156 V244 Z" fill="#e7f4ec"/>
+  <path d="M278 244 V156 A50 50 0 0 1 378 156 V244" fill="none" stroke="#0e3d2e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M256 244 H400" fill="none" stroke="#0e3d2e" stroke-width="8" stroke-linecap="round"/>
+  <g fill="none" stroke="#b8860b" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="328" cy="178" r="13"/>
+    <path d="M328 191 V232"/>
+    <path d="M328 214 H342"/>
+    <path d="M328 228 H338"/>
+  </g>
 </svg>
