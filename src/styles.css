@@ -252,12 +252,30 @@ p {
   box-shadow: var(--shadow);
 }
 
-.hero-scene-frame > img {
+.hero-scene-frame > img,
+.hero-scene-strip {
   width: 100%;
   height: 36rem;
+  display: block;
+}
+
+.hero-scene-triptych .hero-scene-strip {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.35rem;
+}
+
+.hero-strip-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+  display: block;
+}
+
+.hero-scene-frame > img:not(.hero-strip-img) {
   object-fit: cover;
   object-position: 72% 40%;
-  display: block;
 }
 
 .hero-scene-copy {
@@ -939,9 +957,19 @@ textarea {
     padding-top: 0.85rem;
   }
 
-  .hero-scene-frame > img {
-    height: 28rem;
-    object-position: 80% 36%;
+  .hero-scene-frame > img:not(.hero-strip-img),
+  .hero-scene-strip {
+    height: auto;
+  }
+
+  .hero-scene-triptych .hero-scene-strip {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .hero-strip-img {
+    height: 14rem;
+    object-position: center 40%;
   }
 
   .hero-scene-copy {
